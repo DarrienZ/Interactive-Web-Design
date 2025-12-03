@@ -1,4 +1,4 @@
-=**Interactive Web Design**
+**Interactive Web Design**
 
 
 The assignment necessitates research and a survey, followed by the development of Mid-Fidelity Wireframes. Subsequently, we are required to produce a final High-Fidelity design and code the website using Bootstrap 5.3.
