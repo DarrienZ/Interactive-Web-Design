@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+   background-color: #F4F8FB;
+}
+.home {
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+}
+
+.wrapper {
+    width: 50%;
+}
+
+.wrapper h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+#wrapper_button p{
+    background-color: #F6C7C7;
+    width: 150px;
+    padding: 5px 0;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#wrapper_button p:hover {
+    background-color: #f8bcbc;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a p {
+    background-color: #AFC6FF;
+    width: 150px;
+    padding: 5px 0;
+    border-radius: 100px;
+    text-align: center;
+}
+
+a p:hover {
+    background-color: #7ea1fc;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.navbar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.sm-icons {
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+.sm-icons .nav-link {
+    padding-right: 1em;
+}
+
+#shopcategory h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+#ourachievements_header{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #AFC6FF;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #99A3FF;
+}
+
+#ourachievements i{
+    font-size: 2rem;
+}
