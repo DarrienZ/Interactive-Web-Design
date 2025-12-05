@@ -4,14 +4,21 @@
 
 body {
    background-color: #F4F8FB;
-   
+
 }
 .home {
-    height: 100vh;
+    height: 80vh;
     display: flex; 
     align-items: center;
     justify-content: start;
     text-align: start;
+}
+
+.faqpage {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .wrapper {
