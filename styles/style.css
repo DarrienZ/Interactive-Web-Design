@@ -3,7 +3,12 @@
 
 
 body {
-   background-color: #F4F8FB;
+   background-color: #E2F2FF;
+
+}
+
+#homepage {
+   background-color: #f4f8fb;
 
 }
 .home {
@@ -101,6 +106,37 @@ img {
     font-family: "Poppins", sans-serif;
 }
 
+.faqpage h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+.faqpage h4 {
+    font-family: "Poppins", sans-serif;
+}
+
+.faqpage p {
+    font-family: "Inter", sans-serif;
+}
+
+.accordion-header {
+    font-family: "Poppins", sans-serif;
+}
+
+.accordion-body {
+    font-family: "Inter", sans-serif;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+    background-color: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none; 
+}
+
+
 .btn {
     background-color: #AFC6FF;
     font-family: "Inter", sans-serif;
@@ -111,4 +147,6 @@ img {
 .btn:hover {
     background-color: #99A3FF;
 }
+
+
 
