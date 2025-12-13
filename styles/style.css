@@ -79,8 +79,8 @@ img {
 }
 
 .navbar-brand img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
 }
 
@@ -98,44 +98,17 @@ img {
     padding-right: 1em;
 }
 
-#shopcategory p {
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
     font-family: "Inter", sans-serif;
-}
-
-#ourachievements_header{
-    font-family: "Poppins", sans-serif;
-}
-
-.faqpage h6 {
-    font-family: "Poppins", sans-serif;
-}
-
-.faqpage h4 {
-    font-family: "Poppins", sans-serif;
-}
-
-.faqpage p {
-    font-family: "Inter", sans-serif;
-}
-
-.accordion-header {
-    font-family: "Poppins", sans-serif;
-}
-
-.accordion-body {
-    font-family: "Inter", sans-serif;
-}
-
-.accordion-item,
-.accordion-button,
-.accordion-body {
-    background-color: transparent !important;
 }
 
 .accordion-button:not(.collapsed) {
     box-shadow: none; 
 }
-
 
 .btn {
     background-color: #AFC6FF;
