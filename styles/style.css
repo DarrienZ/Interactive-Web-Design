@@ -2,25 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-body {
-   background-color: #E2F2FF;
 
+body {
+    background-color: #E2F2FF;
 }
 
 #homepage {
-   background-color: #f4f8fb;
+    background-color: #f4f8fb;
 
 }
+
 .home {
     height: 80vh;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: start;
     text-align: start;
 }
 
 .faqpage {
-    display: flex; 
+    height: 30vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -31,14 +33,14 @@ body {
 }
 
 .wrapper h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 15px;
-  line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.2;
 }
 
-#wrapper_button p{
+#wrapper_button p {
     background-color: #F6C7C7;
     width: 150px;
     padding: 5px 0;
@@ -98,16 +100,22 @@ img {
     padding-right: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins", sans-serif;
 }
 
-p, span{
+p,
+span {
     font-family: "Inter", sans-serif;
 }
 
 .accordion-button:not(.collapsed) {
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 .btn {
@@ -120,6 +128,3 @@ p, span{
 .btn:hover {
     background-color: #99A3FF;
 }
-
-
-
