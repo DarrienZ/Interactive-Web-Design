@@ -24,10 +24,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="light" style="background-color: #F4F8FB;">
+    <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="light" style="background-color: #E2F2FF;">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="">
+                <img src="./images/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,34 +63,74 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav sm-icons">
-                    <li><a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a></li>
-                    <li><a class="nav-link" href="#"><i class="bi bi-heart-fill"></i></a></li>
-                    <li><a class="nav-link" href="#"><i class="bi bi-basket2-fill"></i></a></li>
+                    <li><a class="nav-link" href="#" style="color: black;"><i class="bi bi-person-circle"></i></a></li>
+                    <li><a class="nav-link" href="#" style="color: darkred;"><i class="bi bi-heart-fill"></i></a></li>
+                    <li><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#ShopAmigurumiOffCanvasRight"
+              aria-controls="offcanvasRight" href="#"><i class="bi bi-basket2-fill" style="color: black;"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="ShopAmigurumiOffCanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel"><i class="bi bi-basket2-fill px-1"></i> CART</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <hr class="mt-0 mx-auto mb-1" style="height: 4px; opacity: 1; width: 360px;">
+
+    <div class="offcanvas-body">
+    </div>
+    <div class="offcanvas-footer p-4">
+      <hr class="mt-0 mx-auto mb-3" style="height: 4px; opacity: 1; width: 360px;">
+      <div class="mb-3">
+        <div class="d-flex justify-content-between">
+          <p>Subtotal</p>
+          <p>RM 0</p>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <p>Delivery Fee</p>
+          <p>RM 0</p>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold">Total</p>
+          <p class="fw-bold">RM 0</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-md mb-4 w-75 d-block mx-auto"
+        style="color: #F0F0F0; background-color: #333333; height: 50px">
+        CHECKOUT
+      </button>
+      <p class="text-decoration-underline opacity-75 text-center">Shipping
+        Details
+      </p>
+    </div>
+  </div>
+
 
 
     <div class="container pb-5 pt-5 mt-5" id="shopcategory">
         <h3 class="mb-3 fw-bold text-center">AMIGURUMI DOLLS</h3>
-        <div class="row">
+        <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold">Smiley SunFlower Potted</h6>
                         <p class="card-text">Handmade Smiley Sunflower Potted Amigurumi Crochet</p>
                         <div class="mt-auto d-flex justify-content-between align-items-center w-100">
                             <span class="fw-bold fs-6">70 MYR</span>
-                            <a href="#" class="btn btn-custom " data-bs-toggle="modal" data-bs-target="#ami_1">View Details</a>
+                            <a href="#" class="btn btn-custom " data-bs-toggle="modal" data-bs-target="#ami_1">View
+                                Details</a>
                         </div>
 
                         <div class="modal fade" id="ami_1" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content" style="background-color: #F4F8FB;">
                                     <div class="modal-body p-0">
                                         <div class="row g-0">
                                             <div id="carouselExampleAutoplaying" class="carousel slide col-md-6 mx-auto"
@@ -123,9 +163,9 @@
                                             <div class="col-md-6 p-4">
                                                 <button type="button" class="btn-close float-end"
                                                     data-bs-dismiss="modal" aria-label="Close"></button>
-                                                <h6 class="fw-bold ms-0">Smiley SunFlower Pot</h6>
-                                                <div class="d-flex align-items-center mb-0">
-                                                    <p class="mb-0 me-2 fw-bold">25 MYR</p>
+                                                <h4 class="fw-bold ms-0">Smiley SunFlower Pot</h4>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <h5 class="mb-0 me-2 fw-bold">25 MYR</h5>
                                                     <span
                                                         class="badge bg-success bg-opacity-10 text-success border border-success">In
                                                         Stock</span>
@@ -140,35 +180,42 @@
                                                 </div>
 
                                                 <div class="accordion accordion-flush" id="accordionFlushExample">
-                                                    <div class="accordion-item">
+                                                    <div class="accordion-item"
+                                                        style="border: none; background-color: transparent;">
                                                         <h2 class="accordion-header">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse"
+                                                            <button class="accordion-button collapsed fw-bold"
+                                                                type="button" data-bs-toggle="collapse"
                                                                 data-bs-target="#flush-collapseOne"
-                                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                                aria-expanded="false" aria-controls="flush-collapseOne"
+                                                                style="background-color: transparent;">
                                                                 Product Description
                                                             </button>
                                                         </h2>
                                                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                                                             data-bs-parent="#accordionFlushExample">
-                                                            <div class="accordion-body">Brighten up any space with this
+                                                            <div class="accordion-body"
+                                                                style="background-color: transparent;">Brighten up any
+                                                                space with this
                                                                 adorable, 100% handmade crochet sunflower. Perfect as a
                                                                 birthday gift, car accessory, or indoor decoration.
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="accordion-item">
+                                                    <div class="accordion-item"
+                                                        style="border: none; background-color: transparent;">
                                                         <h2 class="accordion-header">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse"
+                                                            <button class="accordion-button collapsed fw-bold"
+                                                                type="button" data-bs-toggle="collapse"
                                                                 data-bs-target="#flush-collapseTwo"
-                                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                aria-expanded="false" aria-controls="flush-collapseTwo"
+                                                                style="background-color: transparent;">
                                                                 Product Specifications
                                                             </button>
                                                         </h2>
                                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                             data-bs-parent="#accordionFlushExample">
-                                                            <div class="accordion-body">
+                                                            <div class="accordion-body"
+                                                                style="background-color: transparent;">
                                                                 <b>Size:</b> Height 20cm x Width 14cm (Approx.) <br>
                                                                 <br>
 
@@ -177,20 +224,23 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="accordion-item">
+                                                    <div class="accordion-item"
+                                                        style="border: none; background-color: transparent;">
                                                         <h2 class="accordion-header">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse"
+                                                            <button class="accordion-button collapsed fw-bold"
+                                                                type="button" data-bs-toggle="collapse"
                                                                 data-bs-target="#flush-collapseThree"
                                                                 aria-expanded="false"
-                                                                aria-controls="flush-collapseThree">
+                                                                aria-controls="flush-collapseThree"
+                                                                style="background-color: transparent;">
                                                                 Important Notes
                                                             </button>
                                                         </h2>
                                                         <div id="flush-collapseThree"
                                                             class="accordion-collapse collapse"
                                                             data-bs-parent="#accordionFlushExample">
-                                                            <div class="accordion-body">
+                                                            <div class="accordion-body"
+                                                                style="background-color: transparent;">
                                                                 <b>Custom Colors:</b> Want a different shade? Chat with
                                                                 us! We
                                                                 have more colors coming soon and can match your
@@ -216,25 +266,117 @@
                                     </div>
 
 
-                                    <div class="modal-footer justify-content-between">
+                                    <div class="modal-footer justify-content-between" style="color: #F2F9FF;">
                                         <div class="d-flex align-items-center text-success small fw-bold">
                                             <i class="bi bi-shield-fill-check me-1"></i> Secure Checkout
                                         </div>
 
-                                        <div class="d-flex gap-2">
+                                        <div class="d-flex gap-3">
+
                                             <div class="input-group" style="width: 100px;">
                                                 <button class="btn btn-outline-secondary btn-sm" type="button"
-                                                    style="background-color: transparent;">-</button>
+                                                    style="background-color: transparent; color: black;"><i
+                                                        class="bi bi-dash-lg"></i></button>
+
                                                 <input type="text" class="form-control form-control-sm text-center"
                                                     value="1">
+
                                                 <button class="btn btn-outline-secondary btn-sm" type="button"
-                                                    style="background-color: transparent; color: black;">+</button>
+                                                    style="background-color: transparent; color: black;"><i
+                                                        class="bi bi-plus-lg"></i></button>
                                             </div>
-                                            <button type="button" class="btn btn-md px-4"
+
+                                            <button type="button" class="btn btn-md px-4" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
                                                 style="color: white; background-color: #7D6CFF; border: none;"><i
                                                     class="bi bi-cart-fill me-2"></i>Add to cart</button>
                                         </div>
                                     </div>
+
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel"><i
+                                                    class="bi bi-basket2-fill px-1"></i> CART</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <hr class="mt-0 mx-auto mb-1" style="height: 4px; opacity: 1; width: 360px;">
+
+                                        <div class="offcanvas-body">
+                                            <div class="row">
+
+                                                <div class="col-md-3 me-3">
+                                                    <img src="./images/ami_1.png" alt="Smiley SunFlower Pot"
+                                                        style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                                                </div>
+
+                                                <div class="col-md-7">
+                                                    <h6 class="fw-bold mb-1">Smiley SunFlower Pot</h6>
+                                                    <span class="fw-bold small">RM 25</span>
+
+                                                    <div class="d-flex justify-content-between align-items-center mt-2">
+
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="text-secondary me-2 small">QTY:</span>
+
+                                                            <div class="input-group input-group-sm"
+                                                                style="width: 80px;">
+                                                                <button class="btn btn-outline-secondary px-1"
+                                                                    type="button"
+                                                                    style="background-color: transparent; color: black;"><i
+                                                                        class="bi bi-dash fs-6"></i></button>
+
+                                                                <input type="text"
+                                                                    class="form-control form-control-sm text-center fs-6"
+                                                                    value="1">
+
+                                                                <button class="btn btn-outline-secondary px-1"
+                                                                    type="button"
+                                                                    style="background-color: transparent; color: black;"><i
+                                                                        class="bi bi-plus fs-6"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ps-5 ms-5">
+                                                            <button type="button" class="btn btn-sm"
+                                                                style="background-color: transparent; border: 1px solid black;">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas-footer p-4">
+                                            <hr class="mt-0 mx-auto mb-3"
+                                                style="height: 4px; opacity: 1; width: 360px;">
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <p>Subtotal</p>
+                                                    <p>RM 25</p>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between">
+                                                    <p>Delivery Fee</p>
+                                                    <p>RM 25</p>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="fw-bold">Total</p>
+                                                    <p class="fw-bold">RM 35</p>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-md mb-4 w-75 d-block mx-auto"
+                                                style="color: #F0F0F0; background-color: #333333; height: 50px">
+                                                CHECKOUT
+                                            </button>
+                                            <p class="text-decoration-underline opacity-75 text-center">Shipping
+                                                Details
+                                            </p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -243,7 +385,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_2.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_2.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Teletubbies</h6>
                         <p class="card-text">Handmade Teletubbies Amigurumi Crochet</p>
@@ -256,7 +399,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_3.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_3.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold">Princess Popcorn Dress</h6>
                         <p class="card-text">100% Special Handmade Princess Popcorn Dress Amigurumi Crochet
@@ -270,10 +414,11 @@
             </div>
         </div>
 
-        <div class="row pt-5">
+        <div class="row g-3 pt-3">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Amigurumi Dolls</h6>
                         <p class="card-text">Delightful soft toys perfect for cuddling and gifting.</p>
@@ -286,7 +431,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Keychains & Accessories</h6>
                         <p class="card-text">Add handmade charm to your bags, keys, and daily essentials.</p>
@@ -299,7 +445,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Custom Order</h6>
                         <p class="card-text">Bring your unique vision to life with a personalised crochet commission.
@@ -313,10 +460,11 @@
             </div>
         </div>
 
-        <div class="row pt-5">
+        <div class="row g-3 pt-3">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Amigurumi Dolls</h6>
                         <p class="card-text">Delightful soft toys perfect for cuddling and gifting.</p>
@@ -329,7 +477,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Keychains & Accessories</h6>
                         <p class="card-text">Add handmade charm to your bags, keys, and daily essentials.</p>
@@ -342,7 +491,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0 h-100" style="border-radius: 20px;">
-                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                    <img src="./images/ami_1.png" alt="Amigurumi" class="card-img-top"
+                        style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
                     <div class="card-body d-flex flex-column">
                         <h6 class="card-title fw-bold ">Custom Order</h6>
                         <p class="card-text">Bring your unique vision to life with a personalised crochet commission.

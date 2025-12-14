@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="light" style="background-color: #E2F2FF;">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="" style="width: 80px; height: 80px;">
+        <img src="./images/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +63,51 @@
           </li>
         </ul>
         <ul class="navbar-nav sm-icons">
-          <li><a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a></li>
-          <li><a class="nav-link" href="#"><i class="bi bi-heart-fill"></i></a></li>
-          <li><a class="nav-link" href="#"><i class="bi bi-basket2-fill"></i></a></li>
+          <li><a class="nav-link" href="#" style="color: black;"><i class="bi bi-person-circle"></i></a></li>
+          <li><a class="nav-link" href="#" style="color: darkred;"><i class="bi bi-heart-fill"></i></a></li>
+          <li><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight" href="#" style="color: black;"><i class="bi bi-basket2-fill"></i></a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel"><i class="bi bi-basket2-fill px-1"></i> CART</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <hr class="mt-0 mx-auto mb-1" style="height: 4px; opacity: 1; width: 360px;">
+
+    <div class="offcanvas-body">
+    </div>
+    <div class="offcanvas-footer p-4">
+      <hr class="mt-0 mx-auto mb-3" style="height: 4px; opacity: 1; width: 360px;">
+      <div class="mb-3">
+        <div class="d-flex justify-content-between">
+          <p>Subtotal</p>
+          <p>RM 0</p>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <p>Delivery Fee</p>
+          <p>RM 0</p>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold">Total</p>
+          <p class="fw-bold">RM 0</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-md mb-4 w-75 d-block mx-auto"
+        style="color: #F0F0F0; background-color: #333333; height: 50px">
+        CHECKOUT
+      </button>
+      <p class="text-decoration-underline opacity-75 text-center">Shipping
+        Details
+      </p>
+    </div>
+  </div>
 
   <div class="container-fluid faqpage mt-5 mb-2 pt-5 pb-2">
     <div class="wrapper">
@@ -89,7 +127,7 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
 
 
-          <div class="accordion-item mb-3" style="background-color: transparent;">
+          <div class="accordion-item mb-3" style="border: none; background-color: transparent;">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="border: none; background-color: transparent;">
@@ -162,7 +200,6 @@
               <div class="accordion-body" style="background-color: transparent;">We usually use J&T Express or Ninja Van. The estimated delivery time is around 1-3 days.</div>
             </div>
           </div>    
-
         </div>
       </div>
     </div>

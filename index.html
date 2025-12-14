@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="light" style="background-color: #F4F8FB;">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="">
+        <img src="./images/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,120 +63,160 @@
           </li>
         </ul>
         <ul class="navbar-nav sm-icons">
-          <li><a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a></li>
-          <li><a class="nav-link" href="#"><i class="bi bi-heart-fill"></i></a></li>
-          <li><a class="nav-link" href="#"><i class="bi bi-basket2-fill"></i></a></li>
+          <li><a class="nav-link" href="#" style="color: black;"><i class="bi bi-person-circle"></i></a></li>
+          <li><a class="nav-link" href="#" style="color: darkred;"><i class="bi bi-heart-fill"></i></a></li>
+          <li><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight" href="#" style="color: black;"><i class="bi bi-basket2-fill"></i></a></li>
         </ul>
+
       </div>
     </div>
   </nav>
 
-  <div id="homepage">
-  <div class="container home" id="home">
-    <div class="wrapper">
-      <h3>Handmade Charm. Crafted One Stitch at a Time.</h3>
-      <p>Find your perfect piece: Amigurumi, keychains. Need something special? Request a personalized custom order.</p>
-      <a href="#shopcategory" id="wrapper_button">
-        <p>Shop Now</p>
-      </a>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel"><i class="bi bi-basket2-fill px-1"></i> CART</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="col-md-6">
-      <img src="./images/home_banner.png" class="img-fluid" alt="IMG1">
-    </div>
-  </div>
+    <hr class="mt-0 mx-auto mb-1" style="height: 4px; opacity: 1; width: 360px;">
 
-  <div class="container pb-5" id="shopcategory">
-    <h4 class="mb-3 fw-bold fs-3">Product Categories</h4>
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 h-100" style="border-radius: 20px;">
-          <img src="./images/amigurumi.png" alt="Amigurumi" class="card-img-top">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-5">Amigurumi Dolls</h5>
-            <p class="card-text">Delightful soft toys perfect for cuddling and gifting.</p>
-            <div class="mt-auto d-flex justify-content-between align-items-center w-100">
-              <span class="fw-bold fs-6">From 70 MYR</span>
-              <a href="#" class="btn btn-custom">View</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 h-100" style="border-radius: 20px;">
-          <img src="./images/keychain.png" alt="Keychains & Accessories" class="card-img-top">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-5">Keychains & Accessories</h5>
-            <p class="card-text">Add handmade charm to your bags, keys, and daily essentials.</p>
-            <div class="mt-auto d-flex justify-content-between align-items-center w-100">
-              <span class="fw-bold fs-6">From 10 MYR</span>
-              <a href="#" class="btn btn-custom">View</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 h-100" style="border-radius: 20px;">
-          <img src="./images/customorder.png" alt="Custom Order" class="card-img-top">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-5">Custom Order</h5>
-            <p class="card-text">Bring your unique vision to life with a personalised crochet commission.</p>
-            <div class="mt-auto d-flex justify-content-between align-items-center w-100">
-              <span class="fw-bold fs-6">Custom Pricing</span>
-              <a href="#" class="btn btn-custom">Order</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="offcanvas-body">
     </div>
-  </div>
+    <div class="offcanvas-footer p-4">
+      <hr class="mt-0 mx-auto mb-3" style="height: 4px; opacity: 1; width: 360px;">
+      <div class="mb-3">
+        <div class="d-flex justify-content-between">
+          <p>Subtotal</p>
+          <p>RM 0</p>
+        </div>
 
-  <div class="container pt-5 mb-5">
-    <h4 class="mt-5 text-center fw-bold fs-3">Our Achievements</h4>
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 h-100 bg-transparent" style="border-radius: 20px;">
-          <div class="card-body text-center">
-            <i class="bi bi-basket2-fill fs-1"
-              style="color: #F6C7C7; background-color: white; border-radius: 50%; width: 100px; height: 100px; display: inline-flex; justify-content: center; align-items: center;"></i>
-            <h3 class="card-title fw-bold mt-3">100+</h3>
-            <h5>Handmade Items</h5>
-            <p>Crafting over 100 unique, handmade treasures with love since 2024.</p>
-          </div>
+        <div class="d-flex justify-content-between">
+          <p>Delivery Fee</p>
+          <p>RM 0</p>
         </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 h-100 bg-transparent" style="border-radius: 20px;">
-          <div class="card-body text-center">
-            <i class="bi bi-star-fill fs-1"
-              style="color: #F6C7C7; background-color: white; border-radius: 50%; width: 100px; height: 100px; display: inline-flex; justify-content: center; align-items: center;"></i>
-            <h3 class="card-title fw-bold mt-3">5 Years</h3>
-            <h5>Experience</h5>
-            <p>Bringing over 5 years of personal craftsmanship to the shop we launched in 2024.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 h-100 bg-transparent" style="border-radius: 20px;">
-          <div class="card-body text-center">
-            <i class="bi bi-palette-fill fs-1"
-              style="color: #F6C7C7; background-color: white; border-radius: 50%; width: 100px; height: 100px; display: inline-flex; justify-content: center; align-items: center;"></i>
-            <h3 class="card-title fw-bold mt-3">20+</h3>
-            <h5>Custom Orders</h5>
-            <p>Bringing your unique vision to life with personalized commissions.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <div class="container">
-      <p class="mb-0">
-        STYLECHARMING &copy; 2025. All Right Reserved
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold">Total</p>
+          <p class="fw-bold">RM 0</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-md mb-4 w-75 d-block mx-auto"
+        style="color: #F0F0F0; background-color: #333333; height: 50px">
+        CHECKOUT
+      </button>
+      <p class="text-decoration-underline opacity-75 text-center">Shipping
+        Details
       </p>
     </div>
-  </footer>
-</div>
+  </div>
+
+  <div id="homepage">
+    <div class="container home" id="home">
+      <div class="wrapper">
+        <h3>Handmade Charm. Crafted One Stitch at a Time.</h3>
+        <p>Find your perfect piece: Amigurumi, keychains. Need something special? Request a personalized custom order.
+        </p>
+        <a href="#shopcategory" id="wrapper_button">
+          <p>Shop Now</p>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <img src="./images/home_banner.png" class="img-fluid" alt="IMG1">
+      </div>
+    </div>
+
+    <div class="container pb-5" id="shopcategory">
+      <h4 class="mb-3 fw-bold fs-3">Product Categories</h4>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 h-100" style="border-radius: 20px;">
+            <img src="./images/amigurumi.png" alt="Amigurumi" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold fs-5">Amigurumi Dolls</h5>
+              <p class="card-text">Delightful soft toys perfect for cuddling and gifting.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center w-100">
+                <span class="fw-bold fs-6">From 70 MYR</span>
+                <a href="./shopamigurumi.html" class="btn btn-custom">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 h-100" style="border-radius: 20px;">
+            <img src="./images/keychain.png" alt="Keychains & Accessories" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold fs-5">Keychains & Accessories</h5>
+              <p class="card-text">Add handmade charm to your bags, keys, and daily essentials.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center w-100">
+                <span class="fw-bold fs-6">From 10 MYR</span>
+                <a href="#" class="btn btn-custom">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 h-100" style="border-radius: 20px;">
+            <img src="./images/customorder.png" alt="Custom Order" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold fs-5">Custom Order</h5>
+              <p class="card-text">Bring your unique vision to life with a personalised crochet commission.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center w-100">
+                <span class="fw-bold fs-6">Custom Pricing</span>
+                <a href="#" class="btn btn-custom">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-5 mb-5">
+      <h4 class="mt-5 text-center fw-bold fs-3">Our Achievements</h4>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 h-100 bg-transparent" style="border-radius: 20px;">
+            <div class="card-body text-center">
+              <i class="bi bi-basket2-fill fs-1"
+                style="color: #F6C7C7; background-color: white; border-radius: 50%; width: 100px; height: 100px; display: inline-flex; justify-content: center; align-items: center;"></i>
+              <h3 class="card-title fw-bold mt-3">100+</h3>
+              <h5>Handmade Items</h5>
+              <p>Crafting over 100 unique, handmade treasures with love since 2024.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 h-100 bg-transparent" style="border-radius: 20px;">
+            <div class="card-body text-center">
+              <i class="bi bi-star-fill fs-1"
+                style="color: #F6C7C7; background-color: white; border-radius: 50%; width: 100px; height: 100px; display: inline-flex; justify-content: center; align-items: center;"></i>
+              <h3 class="card-title fw-bold mt-3">5 Years</h3>
+              <h5>Experience</h5>
+              <p>Bringing over 5 years of personal craftsmanship to the shop we launched in 2024.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 h-100 bg-transparent" style="border-radius: 20px;">
+            <div class="card-body text-center">
+              <i class="bi bi-palette-fill fs-1"
+                style="color: #F6C7C7; background-color: white; border-radius: 50%; width: 100px; height: 100px; display: inline-flex; justify-content: center; align-items: center;"></i>
+              <h3 class="card-title fw-bold mt-3">20+</h3>
+              <h5>Custom Orders</h5>
+              <p>Bringing your unique vision to life with personalized commissions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-0">
+          STYLECHARMING &copy; 2025. All Right Reserved
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
