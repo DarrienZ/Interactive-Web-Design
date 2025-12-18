@@ -13,11 +13,23 @@ body {
 }
 
 .home {
+    background-image: url(../images/homebg.png);
+    background-repeat: no-repeat;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: start;
     text-align: start;
+}
+
+.btncategory a:hover {
+    background-color: #A8E0E8;
+}
+
+.btncategory a{
+    background-color: transparent;
+    border: 1px solid #A8E0E8;
+    border-radius: 12px;
 }
 
 .faqpage {
@@ -42,6 +54,7 @@ body {
 
 #wrapper_button p {
     background-color: #F6C7C7;
+    color: white;
     width: 150px;
     padding: 5px 0;
     height: 50px;
@@ -53,8 +66,8 @@ body {
 }
 
 #wrapper_button p:hover {
-    background-color: #f8bcbc;
-    color: black;
+    background-color: #8B88F8;
+    color: white;
 }
 
 a {
