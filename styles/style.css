@@ -141,3 +141,20 @@ span {
 .btn:hover {
     background-color: #99A3FF;
 }
+
+.upload-box {
+    border: 2px dashed #8ba7c2;
+    background-color: #f4f9ff;
+    border-radius: 15px;
+    padding: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .upload-box:hover {
+    background-color: #eef5ff;
+  }
+
+  .pricing-pill {
+  background-color: #bfc7ff;
+  border-radius: 20px;
+}
