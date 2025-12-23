@@ -185,7 +185,8 @@ span {
     margin: 0 0 10px 0;
 }
 
-.contactform .inputbox input, .contactform .inputbox textarea{
+.contactform .inputbox input,
+.contactform .inputbox textarea {
     width: 100%;
     padding: 10px 0;
     border: none;
@@ -230,7 +231,7 @@ span {
 
 .overlay-text {
     position: absolute;
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: auto;
 }
@@ -238,42 +239,3 @@ span {
 .img-box:hover .overlay-text {
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
